@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="BMS-Performance" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="File Paths and URL" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="BASE_URL" elementType="Argument">
+              <stringProp name="Argument.name">BASE_URL</stringProp>
+              <stringProp name="Argument.value">10.254.152.98:8080/user/login</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="elementwait" elementType="Argument">
+              <stringProp name="Argument.name">elementwait</stringProp>
+              <stringProp name="Argument.value">100</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="Screenshot" elementType="Argument">
+              <stringProp name="Argument.name">Screenshot</stringProp>
+              <stringProp name="Argument.value">C:\Users\RAC IT\Desktop\Error ScreenshotsFailureImages</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="AggregatePath" elementType="Argument">
+              <stringProp name="Argument.name">AggregatePath</stringProp>
+              <stringProp name="Argument.value">Results/AggregateReport</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ViewResultsPath" elementType="Argument">
+              <stringProp name="Argument.name">ViewResultsPath</stringProp>
+              <stringProp name="Argument.value">Results/ViewResultTree</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="pause1" elementType="Argument">
+              <stringProp name="Argument.name">pause1</stringProp>
+              <stringProp name="Argument.value">1000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="pause2" elementType="Argument">
+              <stringProp name="Argument.name">pause2</stringProp>
+              <stringProp name="Argument.value">3000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="pause5" elementType="Argument">
+              <stringProp name="Argument.name">pause5</stringProp>
+              <stringProp name="Argument.value">5000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="pause10" elementType="Argument">
+              <stringProp name="Argument.name">pause10</stringProp>
+              <stringProp name="Argument.value">10000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="waitToRefresh" elementType="Argument">
+              <stringProp name="Argument.name">waitToRefresh</stringProp>
+              <stringProp name="Argument.value">30000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ThinkTime" elementType="Argument">
+              <stringProp name="Argument.name">ThinkTime</stringProp>
+              <stringProp name="Argument.value">370</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">C:\Users\RAC IT\Desktop\BMS Performance\BMS Users.csv</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">User,Password</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+          <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+          <boolProp name="clearEachIteration">true</boolProp>
+          <boolProp name="useExpires">true</boolProp>
+          <boolProp name="CacheManager.controlledByThread">false</boolProp>
+        </CacheManager>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="Chrome Driver Config" enabled="true">
+          <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host"></stringProp>
+          <intProp name="WebDriverConfig.http_port">8080</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
+          <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">C:\Users\RAC IT\Desktop\Performance\chromedriver.exe</stringProp>
+          <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <stringProp name="ConstantTimer.delay">${ThinkTime}</stringProp>
+        </ConstantTimer>
+        <hashTree/>
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+          <collectionProp name="Asserion.test_strings"/>
+          <stringProp name="Assertion.custom_message"></stringProp>
+          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">16</intProp>
+        </ResponseAssertion>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="BMS Launch" enabled="true">
+          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
+var ui = JavaImporter(org.openqa.selenium.support.ui)
+var wait = new ui.WebDriverWait(WDS.browser,${elementwait})
+
+
+WDS.sampleResult.sampleStart()
+WDS.browser.get(&apos;http://${BASE_URL}&apos;)
+//WDS.browser.get(&apos;http://10.254.152.98:8080/user/login&apos;)
+
+
+wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot; //p[contains(text(),&apos;Licensed to Panasonic&apos;)]&quot;)))
+//WDS.sampleResult.sampleEnd()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Login" enabled="true">
+          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium);
+var ui = JavaImporter(org.openqa.selenium.support.ui);
+var wait = new ui.WebDriverWait(WDS.browser, ${elementwait});
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions;
+var exception = null;
+var fileUtils = JavaImporter(org.apache.qpid.util);
+var io = JavaImporter(java.io);
+
+var email = WDS.browser.findElement(pkg.By.id(&quot;username&quot;));
+email.sendKeys([&apos;${User}&apos;]);
+
+var password = WDS.browser.findElement(pkg.By.id(&quot;password&quot;));
+password.sendKeys([&apos;${Password}&apos;]);
+
+var submit = WDS.browser.findElement(pkg.By.id(&quot;loginButton&quot;));
+submit.click();
+
+//java.lang.Thread.sleep(5000);
+java.lang.Thread.sleep(${pause2})
+
+var Advance = null;
+var proceedLink = null;
+
+WDS.sampleResult.sampleStart()
+
+try {
+  Advance = WDS.browser.findElement(pkg.By.xpath(&quot;//button[contains(text(),&apos;Advanced&apos;)]&quot;));
+} catch (e) {
+  // Element not found, handle the scenario accordingly
+  // For example, log the error or perform an alternative action
+  WDS.log.error(&quot;Advanced button not found: &quot; + e.message);
+}
+
+if (Advance) {
+  Advance.click(); // Clicks on the Advanced button if it is present
+
+  try {
+    proceedLink = WDS.browser.findElement(pkg.By.id(&quot;proceed-link&quot;));
+  } catch (e) {
+    // Element not found, handle the scenario accordingly
+    // For example, log the error or perform an alternative action
+    WDS.log.error(&quot;Proceed link not found: &quot; + e.message);
+  }
+
+  if (proceedLink) {
+    proceedLink.click(); // Clicks on the Proceed link if it is present
+  }
+}
+
+try {
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//span[contains(text(),&apos;Host&apos;)]&quot;)))
+} catch (err) {
+    WDS.log.error(err.message)
+    var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//Login_Page_${__time(ddMM_HHmm,)}.png&apos;))
+    exception = err
+    throw exception
+}
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Open Project" enabled="true">
+          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
+var ui = JavaImporter(org.openqa.selenium.support.ui)
+var wait = new ui.WebDriverWait(WDS.browser,${elementwait})
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var exception = null
+var fileUtils = JavaImporter(org.apache.qpid.util)
+var io = JavaImporter(java.io)
+
+var OpenProject = WDS.browser.findElement(pkg.By.xpath(&quot;(//button[@class=&apos;action-btn minimal msl&apos;])[2]&quot;))
+OpenProject.click();
+
+java.lang.Thread.sleep(${pause5})
+
+// Switch to the new tab
+var mainWindowHandle = WDS.browser.getWindowHandle();
+var currentHandles = new java.util.ArrayList(WDS.browser.getWindowHandles());
+currentHandles.remove(mainWindowHandle);
+var newTabHandle = currentHandles.get(0);
+WDS.browser.switchTo().window(newTabHandle);
+
+// Print tab details
+print(&quot;New Tab URL: &quot; + WDS.browser.getCurrentUrl());
+print(&quot;New Tab Title: &quot; + WDS.browser.getTitle());
+print(&quot;2nd Tab: &quot; + newTabHandle)
+
+java.lang.Thread.sleep(${pause2})
+
+WDS.sampleResult.sampleStart()
+
+java.lang.Thread.sleep(${pause10})
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Device Graphs" enabled="true">
+          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
+var ui = JavaImporter(org.openqa.selenium.support.ui)
+var wait = new ui.WebDriverWait(WDS.browser, ${elementwait})
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var exception = null
+var fileUtils = JavaImporter(org.apache.qpid.util)
+var io = JavaImporter(java.io)
+var files = JavaImporter(java.nio.file)
+var dateFormat = new java.text.SimpleDateFormat(&quot;yyyyMMdd_HHmmss&quot;)
+var timestamp = dateFormat.format(new java.util.Date())
+
+var openBuilding = WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;pna horizontal middle&apos;]&quot;))
+openBuilding.click()
+
+var building = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@class=&apos;items-list is-open can-scroll vertical&apos;]&quot;))
+building.click()
+
+java.lang.Thread.sleep(${pause1})
+
+var openFloor = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;pna horizontal middle&apos;])[2]&quot;))
+openFloor.click()
+
+java.lang.Thread.sleep(${pause1})
+
+var fifthFloor = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@class=&apos;items-list is-open can-scroll vertical&apos;]&quot;))
+fifthFloor.click()
+
+java.lang.Thread.sleep(${pause1})
+
+var openDevices = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;pna horizontal middle&apos;])[3]&quot;))
+openDevices.click()
+
+java.lang.Thread.sleep(${pause1})
+
+var selectDevice = WDS.browser.findElement(pkg.By.xpath(&quot;(//li[@class=&apos;pna vertical middle no-flex&apos;])[6]&quot;))
+selectDevice.click()
+
+java.lang.Thread.sleep(${pause1})
+
+var selectDeviceFromMenu = WDS.browser.findElement(pkg.By.xpath(&quot;(//li[@class=&apos;list-item&apos;])[3]&quot;))
+selectDeviceFromMenu.click()
+
+java.lang.Thread.sleep(${pause2})
+
+try {
+  // Capture screenshot
+  var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+
+  // Define the destination directory
+  var screenshotDirectory = &quot;C:\Users\RAC IT\Desktop\Screenshots/&quot;
+
+  // Create the directory if it doesn&apos;t exist
+  new io.File(screenshotDirectory).mkdirs()
+
+  // Construct the screenshot filename with timestamp and user
+  var screenshotFilename = &quot;Snap&quot; + timestamp + &quot;_&quot; + &apos;${User}&apos; + &quot;.png&quot;
+
+  // Define the destination path
+  var screenshotPath = screenshotDirectory + screenshotFilename
+
+  // Save the screenshot to the specified path
+  var destinationPath = new io.File(screenshotPath).toPath()
+  files.Files.copy(screenshot.toPath(), destinationPath)
+
+  // Log a message indicating successful screenshot saving
+  WDS.log.info(&quot;Screenshot saved successfully: &quot; + screenshotPath)
+} catch (e) {
+  // Log the error message if any exception occurs
+  WDS.log.error(&quot;Failed to save the screenshot: &quot; + e)
+}
+
+WDS.sampleResult.sampleStart()
+
+java.lang.Thread.sleep(${pause10})
+
+WDS.sampleResult.sampleEnd()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Send Command" enabled="false">
+          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
+var ui = JavaImporter(org.openqa.selenium.support.ui)
+var wait = new ui.WebDriverWait(WDS.browser,${elementwait})
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var exception = null
+var fileUtils = JavaImporter(org.apache.qpid.util)
+var io = JavaImporter(java.io)
+
+try{
+
+	var appLauncher = WDS.browser.findElement(pkg.By.xpath(&quot;//button[@class=&apos;link-button pna launcher-open-btn&apos;]&quot;))
+	appLauncher.click();
+	
+	var DBBuilder = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;vertical middle center app-item pna&apos;])[21]&quot;))
+	DBBuilder.click();
+	
+	java.lang.Thread.sleep(${pause5})
+	
+	var equpTree = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[1]&quot;))
+	equpTree.click();
+	
+	java.lang.Thread.sleep(${pause5})
+	
+	var RDOffice = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[2]&quot;))
+	RDOffice.click();
+	
+	java.lang.Thread.sleep(${pause5})
+	
+	var Floor5 = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[3]&quot;))
+	Floor5.click();
+	
+	java.lang.Thread.sleep(${pause5})
+	
+	var IrrPumpPoint = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[7]&quot;))
+	IrrPumpPoint.click();
+	
+	java.lang.Thread.sleep(${pause5})
+	
+	var selectPoint = WDS.browser.findElement(pkg.By.xpath(&quot;(//*[@class=&apos;icon-location refresh-icon psh link-button msl&apos;])[6]&quot;))
+	selectPoint.click();
+
+	java.lang.Thread.sleep(${pause5})
+
+	// Switch to the iframe
+	var iframe = WDS.browser.findElement(pkg.By.className(&quot;mini-builder&quot;));
+	WDS.browser.switchTo().frame(iframe);
+
+	java.lang.Thread.sleep(${pause5})
+
+	var sendCommandButton = WDS.browser.findElement(pkg.By.xpath(&quot;(//td[@class=&apos;ant-table-column-has-actions ant-table-column-has-filters ant-table-row-cell-break-word&apos;]//button)[2]&quot;))
+	sendCommandButton.click();
+
+	java.lang.Thread.sleep(${pause5})
+
+	var clickEmerActive = WDS.browser.findElement(pkg.By.xpath(&quot;//button[text()=&apos;Emergency Active&apos;]&quot;))
+	clickEmerActive.click();
+	
+} catch (e) {
+  // Log the error message if any exception occurs
+  print(&quot;The Error Is: &quot; + e)
+}
+
+
+WDS.sampleResult.sampleStart()
+
+java.lang.Thread.sleep(${pause5})
+
+WDS.sampleResult.sampleEnd()</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Send Command" enabled="true">
+          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
+var ui = JavaImporter(org.openqa.selenium.support.ui)
+var wait = new ui.WebDriverWait(WDS.browser, ${elementwait})
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var exception = null
+var fileUtils = JavaImporter(org.apache.qpid.util)
+var io = JavaImporter(java.io)
+
+try {
+  var appLauncher = WDS.browser.findElement(pkg.By.xpath(&quot;//button[@class=&apos;link-button pna launcher-open-btn&apos;]&quot;))
+  appLauncher.click();
+
+  var DBBuilder = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;vertical middle center app-item pna&apos;])[21]&quot;))
+  DBBuilder.click();
+
+  java.lang.Thread.sleep(${pause5})
+
+  var equpTree = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[1]&quot;))
+  equpTree.click();
+
+  java.lang.Thread.sleep(${pause5})
+
+  var RDOffice = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[2]&quot;))
+  RDOffice.click();
+
+  java.lang.Thread.sleep(${pause5})
+
+  var Floor5 = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[3]&quot;))
+  Floor5.click();
+
+  java.lang.Thread.sleep(${pause5})
+
+  var IrrPumpPoint = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[7]&quot;))
+  IrrPumpPoint.click();
+
+  java.lang.Thread.sleep(${pause5})
+
+  var selectPoint = WDS.browser.findElement(pkg.By.xpath(&quot;(//*[@class=&apos;icon-location refresh-icon psh link-button msl&apos;])[6]&quot;))
+  selectPoint.click();
+
+  java.lang.Thread.sleep(${pause5})
+
+  // Switch to the iframe
+  var iframe = WDS.browser.findElement(pkg.By.className(&quot;mini-builder&quot;));
+  WDS.browser.switchTo().frame(iframe);
+
+  java.lang.Thread.sleep(${pause5})
+
+  var sendCommandButton = WDS.browser.findElement(pkg.By.xpath(&quot;(//td[@class=&apos;ant-table-column-has-actions ant-table-column-has-filters ant-table-row-cell-break-word&apos;]//button)[2]&quot;))
+  sendCommandButton.click();
+
+  java.lang.Thread.sleep(${pause5})
+
+//  // Wait for the popup to appear
+//  var popup = wait.until(conditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//*[@id=&apos;point-actions&apos;]/div&quot;)))
+//
+//  var clickEmerActive = WDS.browser.findElement(pkg.By.xpath(&quot;//button[text()=&apos;Emergency Active&apos;]&quot;))
+//  clickEmerActive.click();
+//
+//  java.lang.Thread.sleep(${pause5})
+
+  // Delay to allow the popup to fully load
+  java.lang.Thread.sleep(${pause5});
+} catch (e) {
+  // Log the error message if any exception occurs
+  print(&quot;The Error Is: &quot; + e)
+}
+
+WDS.sampleResult.sampleStart()
+
+java.lang.Thread.sleep(${pause5})
+
+WDS.sampleResult.sampleEnd()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

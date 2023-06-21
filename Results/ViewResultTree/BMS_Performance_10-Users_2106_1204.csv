@@ -1,0 +1,41 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1687329281791,223,BMS Launch,200,OK,Thread Group 1-1,text,true,,1778,0,1,1,http://10.254.152.98:8080/user/login,0,0,0
+1687329285770,1165,Login,200,OK,Thread Group 1-1,text,true,,687686,0,1,1,https://10.254.152.98/home,0,0,0
+1687329291802,171,BMS Launch,200,OK,Thread Group 1-2,text,true,,1778,0,2,2,http://10.254.152.98:8080/user/login,0,0,0
+1687329295766,1176,Login,200,OK,Thread Group 1-2,text,true,,683949,0,2,2,https://10.254.152.98/home,0,0,0
+1687329301840,225,BMS Launch,200,OK,Thread Group 1-3,text,true,,1778,0,3,3,http://10.254.152.98:8080/user/login,0,0,0
+1687329295704,10013,Open Project,200,OK,Thread Group 1-1,text,true,,707349,0,3,3,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329305765,1437,Login,200,OK,Thread Group 1-3,text,true,,687687,0,3,3,https://10.254.152.98/home,0,0,0
+1687329311891,215,BMS Launch,200,OK,Thread Group 1-4,text,true,,1778,0,4,4,http://10.254.152.98:8080/user/login,0,0,0
+1687329305655,10015,Open Project,200,OK,Thread Group 1-2,text,true,,706495,0,4,4,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329315933,1394,Login,200,OK,Thread Group 1-4,text,true,,687686,0,4,4,https://10.254.152.98/home,0,0,0
+1687329321855,197,BMS Launch,200,OK,Thread Group 1-5,text,true,,1778,0,5,5,http://10.254.152.98:8080/user/login,0,0,0
+1687329315576,10014,Device Graphs,200,OK,Thread Group 1-1,text,true,,717965,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329315917,10005,Open Project,200,OK,Thread Group 1-3,text,true,,707350,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329325779,1417,Login,200,OK,Thread Group 1-5,text,true,,687686,0,4,4,https://10.254.152.98/home,0,0,0
+1687329331824,187,BMS Launch,200,OK,Thread Group 1-6,text,true,,1778,0,5,5,http://10.254.152.98:8080/user/login,0,0,0
+1687329325333,10015,Device Graphs,200,OK,Thread Group 1-2,text,true,,717111,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329326074,10013,Open Project,200,OK,Thread Group 1-4,text,true,,707350,0,4,4,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329335784,1373,Login,200,OK,Thread Group 1-6,text,true,,687686,0,4,4,https://10.254.152.98/home,0,0,0
+1687329341766,176,BMS Launch,200,OK,Thread Group 1-7,text,true,,1778,0,5,5,http://10.254.152.98:8080/user/login,0,0,0
+1687329335626,10002,Device Graphs,200,OK,Thread Group 1-3,text,true,,717966,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329335940,10006,Open Project,200,OK,Thread Group 1-5,text,true,,707350,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329345692,1453,Login,200,OK,Thread Group 1-7,text,true,,687687,0,4,4,https://10.254.152.98/home,0,0,0
+1687329351789,191,BMS Launch,200,OK,Thread Group 1-8,text,true,,1778,0,5,5,http://10.254.152.98:8080/user/login,0,0,0
+1687329345624,10014,Device Graphs,200,OK,Thread Group 1-4,text,true,,717966,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329345911,10006,Open Project,200,OK,Thread Group 1-6,text,true,,707351,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329355747,1416,Login,200,OK,Thread Group 1-8,text,true,,687686,0,4,4,https://10.254.152.98/home,0,0,0
+1687329361837,192,BMS Launch,200,OK,Thread Group 1-9,text,true,,1778,0,5,5,http://10.254.152.98:8080/user/login,0,0,0
+1687329355539,10014,Device Graphs,200,OK,Thread Group 1-5,text,true,,717966,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329355855,10009,Open Project,200,OK,Thread Group 1-7,text,true,,707351,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329365818,1333,Login,200,OK,Thread Group 1-9,text,true,,687687,0,4,4,https://10.254.152.98/home,0,0,0
+1687329371970,209,BMS Launch,200,OK,Thread Group 1-10,text,true,,1778,0,5,5,http://10.254.152.98:8080/user/login,0,0,0
+1687329365636,10001,Device Graphs,200,OK,Thread Group 1-6,text,true,,717967,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329365894,10006,Open Project,200,OK,Thread Group 1-8,text,true,,707349,0,5,5,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329375988,1462,Login,200,OK,Thread Group 1-10,text,true,,687686,0,4,4,https://10.254.152.98/home,0,0,0
+1687329375856,10004,Device Graphs,200,OK,Thread Group 1-7,text,true,,717967,0,4,4,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329375869,10007,Open Project,200,OK,Thread Group 1-9,text,true,,707350,0,4,4,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329385439,10006,Device Graphs,200,OK,Thread Group 1-8,text,true,,717965,0,3,3,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329386207,10014,Open Project,200,OK,Thread Group 1-10,text,true,,707350,0,2,2,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687329395664,10013,Device Graphs,200,OK,Thread Group 1-9,text,true,,717966,0,2,2,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687329406010,10007,Device Graphs,200,OK,Thread Group 1-10,text,true,,717966,0,1,1,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
