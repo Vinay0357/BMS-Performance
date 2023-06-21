@@ -338,32 +338,32 @@ selectDeviceFromMenu.click()
 
 java.lang.Thread.sleep(${pause2})
 
-try {
-  // Capture screenshot
-  var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
-
-  // Define the destination directory
-  var screenshotDirectory = &quot;${Screenshots}&quot;
-
-  // Create the directory if it doesn&apos;t exist
-  new io.File(screenshotDirectory).mkdirs()
-
-  // Construct the screenshot filename with timestamp and user
-  var screenshotFilename = &quot;Snap&quot; + timestamp + &quot;_&quot; + &apos;${Users}&apos; + &quot;Users&quot; + &quot;-&quot; + &apos;${User}&apos; + &quot;.png&quot;
-
-  // Define the destination path
-  var screenshotPath = screenshotDirectory + &quot;//&quot; + screenshotFilename
-
-  // Save the screenshot to the specified path
-  var destinationPath = new io.File(screenshotPath).toPath()
-  files.Files.copy(screenshot.toPath(), destinationPath)
-
-  // Log a message indicating successful screenshot saving
-  print(&quot;Screenshot saved successfully: &quot; + screenshotPath)
-} catch (e) {
-  // Log the error message if any exception occurs
-  print(&quot;Failed to save the screenshot: &quot; + e)
-}
+//try {
+//  // Capture screenshot
+//  var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+//
+//  // Define the destination directory
+//  var screenshotDirectory = &quot;${Screenshots}&quot;
+//
+//  // Create the directory if it doesn&apos;t exist
+//  new io.File(screenshotDirectory).mkdirs()
+//
+//  // Construct the screenshot filename with timestamp and user
+//  var screenshotFilename = &quot;Snap&quot; + timestamp + &quot;_&quot; + &apos;${Users}&apos; + &quot;Users&quot; + &quot;-&quot; + &apos;${User}&apos; + &quot;.png&quot;
+//
+//  // Define the destination path
+//  var screenshotPath = screenshotDirectory + &quot;//&quot; + screenshotFilename
+//
+//  // Save the screenshot to the specified path
+//  var destinationPath = new io.File(screenshotPath).toPath()
+//  files.Files.copy(screenshot.toPath(), destinationPath)
+//
+//  // Log a message indicating successful screenshot saving
+//  print(&quot;Screenshot saved successfully: &quot; + screenshotPath)
+//} catch (e) {
+//  // Log the error message if any exception occurs
+//  print(&quot;Failed to save the screenshot: &quot; + e)
+//}
 
 WDS.sampleResult.sampleStart()
 
@@ -598,7 +598,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">${Results_Path}/AggregateGraph/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
+          <stringProp name="filename"></stringProp>
           <stringProp name="TestPlan.comments">${Results_Path}/AggregateGraph/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
         </ResultCollector>
         <hashTree/>
@@ -636,7 +636,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">${Results_Path}/AggregateReport/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
+          <stringProp name="filename"></stringProp>
           <stringProp name="TestPlan.comments">${Results_Path}/AggregateReport/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
         </ResultCollector>
         <hashTree/>
@@ -674,9 +674,99 @@ WDS.sampleResult.sampleEnd()</stringProp>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">${Results_Path}/ViewResultTree/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
+          <stringProp name="filename"></stringProp>
           <stringProp name="TestPlan.comments">${Results_Path}/ViewResultTree/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
         </ResultCollector>
+        <hashTree/>
+        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseTimesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times Over Time" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+          <longProp name="interval_grouping">500</longProp>
+          <boolProp name="graph_aggregated">false</boolProp>
+          <stringProp name="include_sample_labels"></stringProp>
+          <stringProp name="exclude_sample_labels"></stringProp>
+          <stringProp name="start_offset"></stringProp>
+          <stringProp name="end_offset"></stringProp>
+          <boolProp name="include_checkbox_state">false</boolProp>
+          <boolProp name="exclude_checkbox_state">false</boolProp>
+        </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+        <hashTree/>
+        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TransactionsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transactions per Second" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+          <longProp name="interval_grouping">1000</longProp>
+          <boolProp name="graph_aggregated">false</boolProp>
+          <stringProp name="include_sample_labels"></stringProp>
+          <stringProp name="exclude_sample_labels"></stringProp>
+          <stringProp name="start_offset"></stringProp>
+          <stringProp name="end_offset"></stringProp>
+          <boolProp name="include_checkbox_state">false</boolProp>
+          <boolProp name="exclude_checkbox_state">false</boolProp>
+        </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
       </hashTree>
     </hashTree>
