@@ -22,7 +22,7 @@
           </elementProp>
           <elementProp name="RampUp" elementType="Argument">
             <stringProp name="Argument.name">RampUp</stringProp>
-            <stringProp name="Argument.value">290</stringProp>
+            <stringProp name="Argument.value">400</stringProp>
             <stringProp name="Argument.desc">Seconds -&gt; Active Threads = Number of Users/RampUp Duration</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -106,7 +106,7 @@
             </elementProp>
             <elementProp name="ThinkTime" elementType="Argument">
               <stringProp name="Argument.name">ThinkTime</stringProp>
-              <stringProp name="Argument.value">370</stringProp>
+              <stringProp name="Argument.value">5000</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -165,14 +165,6 @@
           <stringProp name="ConstantTimer.delay">${ThinkTime}</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
-          <collectionProp name="Asserion.test_strings"/>
-          <stringProp name="Assertion.custom_message"></stringProp>
-          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-          <boolProp name="Assertion.assume_success">false</boolProp>
-          <intProp name="Assertion.test_type">16</intProp>
-        </ResponseAssertion>
-        <hashTree/>
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="BMS Launch" enabled="true">
           <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
 var ui = JavaImporter(org.openqa.selenium.support.ui)
@@ -181,7 +173,6 @@ var wait = new ui.WebDriverWait(WDS.browser,${elementwait})
 
 WDS.sampleResult.sampleStart()
 WDS.browser.get(&apos;http://${BASE_URL}&apos;)
-//WDS.browser.get(&apos;http://10.254.152.98:8080/user/login&apos;)
 
 
 wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot; //p[contains(text(),&apos;Licensed to Panasonic&apos;)]&quot;)))
@@ -256,7 +247,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Open Project" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Project Page" enabled="true">
           <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
 var ui = JavaImporter(org.openqa.selenium.support.ui)
 var wait = new ui.WebDriverWait(WDS.browser,${elementwait})
@@ -277,23 +268,25 @@ currentHandles.remove(mainWindowHandle);
 var newTabHandle = currentHandles.get(0);
 WDS.browser.switchTo().window(newTabHandle);
 
-// Print tab details
-print(&quot;New Tab URL: &quot; + WDS.browser.getCurrentUrl());
-print(&quot;New Tab Title: &quot; + WDS.browser.getTitle());
-print(&quot;2nd Tab: &quot; + newTabHandle)
-
-java.lang.Thread.sleep(${pause2})
-
 WDS.sampleResult.sampleStart()
 
-java.lang.Thread.sleep(${pause10})
+try {
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//img[@class=&apos;nav-tree-logo&apos;]&quot;)))
+} catch (err) {
+//    WDS.log.error(err.message)
+    print(&quot;The Error Is: &quot; + err.message)
+    var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//Project_Page_${__time(ddMM_HHmm,)}.png&apos;))
+    exception = err
+    throw exception
+}
 
 WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Device Graphs" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Graphics Screen" enabled="true">
           <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
 var ui = JavaImporter(org.openqa.selenium.support.ui)
 var wait = new ui.WebDriverWait(WDS.browser, ${elementwait})
@@ -307,6 +300,8 @@ var timestamp = dateFormat.format(new java.util.Date())
 
 var openBuilding = WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;pna horizontal middle&apos;]&quot;))
 openBuilding.click()
+
+java.lang.Thread.sleep(${pause1})
 
 var building = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@class=&apos;items-list is-open can-scroll vertical&apos;]&quot;))
 building.click()
@@ -336,114 +331,51 @@ java.lang.Thread.sleep(${pause1})
 var selectDeviceFromMenu = WDS.browser.findElement(pkg.By.xpath(&quot;(//li[@class=&apos;list-item&apos;])[3]&quot;))
 selectDeviceFromMenu.click()
 
-java.lang.Thread.sleep(${pause2})
+java.lang.Thread.sleep(${pause1})
 
-//try {
-//  // Capture screenshot
-//  var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
-//
-//  // Define the destination directory
-//  var screenshotDirectory = &quot;${Screenshots}&quot;
-//
-//  // Create the directory if it doesn&apos;t exist
-//  new io.File(screenshotDirectory).mkdirs()
-//
-//  // Construct the screenshot filename with timestamp and user
-//  var screenshotFilename = &quot;Snap&quot; + timestamp + &quot;_&quot; + &apos;${Users}&apos; + &quot;Users&quot; + &quot;-&quot; + &apos;${User}&apos; + &quot;.png&quot;
-//
-//  // Define the destination path
-//  var screenshotPath = screenshotDirectory + &quot;//&quot; + screenshotFilename
-//
-//  // Save the screenshot to the specified path
-//  var destinationPath = new io.File(screenshotPath).toPath()
-//  files.Files.copy(screenshot.toPath(), destinationPath)
-//
-//  // Log a message indicating successful screenshot saving
-//  print(&quot;Screenshot saved successfully: &quot; + screenshotPath)
-//} catch (e) {
-//  // Log the error message if any exception occurs
-//  print(&quot;Failed to save the screenshot: &quot; + e)
-//}
+
+try {
+  // Capture screenshot
+  var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+
+  // Define the destination directory
+  var screenshotDirectory = &quot;${Screenshots}&quot;
+
+  // Create the directory if it doesn&apos;t exist
+  new io.File(screenshotDirectory).mkdirs()
+
+  // Construct the screenshot filename with timestamp and user
+  var screenshotFilename = &quot;Snap&quot; + timestamp + &quot;_&quot; + &apos;${Users}&apos; + &quot;Users&quot; + &quot;-&quot; + &apos;${User}&apos; + &quot;.png&quot;
+
+  // Define the destination path
+  var screenshotPath = screenshotDirectory + &quot;//&quot; + screenshotFilename
+
+  // Save the screenshot to the specified path
+  var destinationPath = new io.File(screenshotPath).toPath()
+  files.Files.copy(screenshot.toPath(), destinationPath)
+
+  // Log a message indicating successful screenshot saving
+  print(&quot;Screenshot saved successfully: &quot; + screenshotPath)
+} catch (e) {
+  // Log the error message if any exception occurs
+  print(&quot;Failed to save the screenshot: &quot; + e)
+}
 
 WDS.sampleResult.sampleStart()
 
-java.lang.Thread.sleep(${pause10})
+try {
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//img[@class=&apos;nav-tree-logo&apos;]&quot;)))
+} catch (err) {
+//    WDS.log.error(err.message)
+    print(&quot;The Error Is: &quot; + err.message)
+    var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//Project_Page_${__time(ddMM_HHmm,)}.png&apos;))
+    exception = err
+    throw exception
+}
 
 WDS.sampleResult.sampleEnd()
 </stringProp>
-          <stringProp name="WebDriverSampler.parameters"></stringProp>
-          <stringProp name="WebDriverSampler.language">javascript</stringProp>
-        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
-        <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Send Command" enabled="false">
-          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
-var ui = JavaImporter(org.openqa.selenium.support.ui)
-var wait = new ui.WebDriverWait(WDS.browser,${elementwait})
-var conditions = org.openqa.selenium.support.ui.ExpectedConditions
-var exception = null
-var fileUtils = JavaImporter(org.apache.qpid.util)
-var io = JavaImporter(java.io)
-
-try{
-
-	var appLauncher = WDS.browser.findElement(pkg.By.xpath(&quot;//button[@class=&apos;link-button pna launcher-open-btn&apos;]&quot;))
-	appLauncher.click();
-	
-	var DBBuilder = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;vertical middle center app-item pna&apos;])[21]&quot;))
-	DBBuilder.click();
-	
-	java.lang.Thread.sleep(${pause5})
-	
-	var equpTree = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[1]&quot;))
-	equpTree.click();
-	
-	java.lang.Thread.sleep(${pause5})
-	
-	var RDOffice = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[2]&quot;))
-	RDOffice.click();
-	
-	java.lang.Thread.sleep(${pause5})
-	
-	var Floor5 = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[3]&quot;))
-	Floor5.click();
-	
-	java.lang.Thread.sleep(${pause5})
-	
-	var IrrPumpPoint = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[7]&quot;))
-	IrrPumpPoint.click();
-	
-	java.lang.Thread.sleep(${pause5})
-	
-	var selectPoint = WDS.browser.findElement(pkg.By.xpath(&quot;(//*[@class=&apos;icon-location refresh-icon psh link-button msl&apos;])[6]&quot;))
-	selectPoint.click();
-
-	java.lang.Thread.sleep(${pause5})
-
-	// Switch to the iframe
-	var iframe = WDS.browser.findElement(pkg.By.className(&quot;mini-builder&quot;));
-	WDS.browser.switchTo().frame(iframe);
-
-	java.lang.Thread.sleep(${pause5})
-
-	var sendCommandButton = WDS.browser.findElement(pkg.By.xpath(&quot;(//td[@class=&apos;ant-table-column-has-actions ant-table-column-has-filters ant-table-row-cell-break-word&apos;]//button)[2]&quot;))
-	sendCommandButton.click();
-
-	java.lang.Thread.sleep(${pause5})
-
-	var clickEmerActive = WDS.browser.findElement(pkg.By.xpath(&quot;//button[text()=&apos;Emergency Active&apos;]&quot;))
-	clickEmerActive.click();
-	
-} catch (e) {
-  // Log the error message if any exception occurs
-  print(&quot;The Error Is: &quot; + e)
-}
-
-
-WDS.sampleResult.sampleStart()
-
-java.lang.Thread.sleep(${pause5})
-
-WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
@@ -519,7 +451,16 @@ try {
 
 WDS.sampleResult.sampleStart()
 
-java.lang.Thread.sleep(${pause5})
+try {
+	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//span[text()=&apos;Available Trees:&apos;]&quot;)))
+} catch (err) {
+//    WDS.log.error(err.message)
+    print(&quot;The Error Is: &quot; + err.message)
+    var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//SendCommand_Page_${__time(ddMM_HHmm,)}.png&apos;))
+    exception = err
+    throw exception
+}
 
 WDS.sampleResult.sampleEnd()
 </stringProp>
@@ -543,10 +484,6 @@ appLauncher.click();
 var Logout = WDS.browser.findElement(pkg.By.xpath(&quot;//span[text()=&apos;Logout&apos;]&quot;))
 Logout.click();
 
-
-java.lang.Thread.sleep(${pause2})
-
-
 WDS.sampleResult.sampleStart()
 
 try {
@@ -554,7 +491,7 @@ try {
 } catch (err) {
     WDS.log.error(err.message)
     var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
-    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//Login_Page_${__time(ddMM_HHmm,)}.png&apos;))
+    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//Logout_Page_${__time(ddMM_HHmm,)}.png&apos;))
     exception = err
     throw exception
 }
@@ -564,7 +501,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -599,7 +536,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
-          <stringProp name="TestPlan.comments">${Results_Path}/AggregateGraph/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
+          <stringProp name="TestPlan.comments">${Results_Path}/ViewResultTree/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
@@ -640,7 +577,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="TestPlan.comments">${Results_Path}/AggregateReport/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -675,7 +612,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
-          <stringProp name="TestPlan.comments">${Results_Path}/ViewResultTree/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
+          <stringProp name="TestPlan.comments">${Results_Path}/AggregateGraph/BMS_Performance_${Users}-Users_${__time(ddMM_HHmm,)}.csv</stringProp>
         </ResultCollector>
         <hashTree/>
         <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseTimesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times Over Time" enabled="true">
