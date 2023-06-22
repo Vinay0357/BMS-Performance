@@ -2284,7 +2284,7 @@ print(&quot;***************************&quot;+deviceStatus+&quot;***************
 
 if(deviceStatus.match(&quot;Null&quot;)){
     var settingButton = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@name=&apos;actionItem&apos; and @class=&apos;icon-gear finComponent&apos;])[1]&quot;))
-    settingButton.click() //Clicks on Control tab from the pop-up
+    settingButton.click() //Clicks on setting button tab for the pop-up
     java.lang.Thread.sleep(${pause1})
     var popup = wait.until(conditions.visibilityOfElementLocated(pkg.By.xpath(&quot;(//div[@id=&apos;point-actions&apos;]//div[1])[1]&quot;)))
     var clickEmerActive = WDS.browser.findElement(pkg.By.xpath(&quot;//button[text()=&apos;Emergency Active&apos;]&quot;))
@@ -2296,12 +2296,13 @@ if(deviceStatus.match(&quot;Null&quot;)){
 
 else{
     var settingButton = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@name=&apos;actionItem&apos; and @class=&apos;icon-gear finComponent&apos;])[1]&quot;))
-    settingButton.click() //Clicks on Control tab from the pop-up
+    settingButton.click() //Clicks on setting button tab for the pop-up
     java.lang.Thread.sleep(${pause1})
     var popup = wait.until(conditions.visibilityOfElementLocated(pkg.By.xpath(&quot;(//div[@id=&apos;point-actions&apos;]//div[1])[1]&quot;)))
     var clickEmerActive = WDS.browser.findElement(pkg.By.xpath(&quot;//button[text()=&apos;Emergency Inactive&apos;]&quot;))
     clickEmerActive.click();
     var deviceStatus = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;view-superman-value finComponent&apos;])[1]&quot;)).getText()
+//    WDS.log.info(&quot;***************************&quot;+deviceStatus+&quot;***************************&quot;)
     print(&quot;***************************&quot;+deviceStatus+&quot;***************************&quot;) 
 }
 
