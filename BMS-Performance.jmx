@@ -16,13 +16,13 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="Users" elementType="Argument">
             <stringProp name="Argument.name">Users</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">50</stringProp>
             <stringProp name="Argument.desc">Users</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="RampUp" elementType="Argument">
             <stringProp name="Argument.name">RampUp</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">200</stringProp>
             <stringProp name="Argument.desc">Seconds -&gt; Active Threads = Number of Users/RampUp Duration</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -248,260 +248,6 @@ WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Project Page" enabled="false">
-          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
-var ui = JavaImporter(org.openqa.selenium.support.ui)
-var wait = new ui.WebDriverWait(WDS.browser,${elementwait})
-var conditions = org.openqa.selenium.support.ui.ExpectedConditions
-var exception = null
-var fileUtils = JavaImporter(org.apache.qpid.util)
-var io = JavaImporter(java.io)
-
-var OpenProject = WDS.browser.findElement(pkg.By.xpath(&quot;(//button[@class=&apos;action-btn minimal msl&apos;])[2]&quot;))
-OpenProject.click();
-
-java.lang.Thread.sleep(${pause5})
-
-// Switch to the new tab
-var mainWindowHandle = WDS.browser.getWindowHandle();
-var currentHandles = new java.util.ArrayList(WDS.browser.getWindowHandles());
-currentHandles.remove(mainWindowHandle);
-var newTabHandle = currentHandles.get(0);
-WDS.browser.switchTo().window(newTabHandle);
-
-WDS.sampleResult.sampleStart()
-
-try {
-	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//img[@class=&apos;nav-tree-logo&apos;]&quot;)))
-} catch (err) {
-//    WDS.log.error(err.message)
-    print(&quot;The Error Is: &quot; + err.message)
-    var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
-    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//Project_Page_${__time(ddMM_HHmm,)}.png&apos;))
-    exception = err
-    throw exception
-}
-
-WDS.sampleResult.sampleEnd()</stringProp>
-          <stringProp name="WebDriverSampler.parameters"></stringProp>
-          <stringProp name="WebDriverSampler.language">javascript</stringProp>
-        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
-        <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Graphics Screen" enabled="false">
-          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
-var ui = JavaImporter(org.openqa.selenium.support.ui)
-var wait = new ui.WebDriverWait(WDS.browser, ${elementwait})
-var conditions = org.openqa.selenium.support.ui.ExpectedConditions
-var exception = null
-var fileUtils = JavaImporter(org.apache.qpid.util)
-var io = JavaImporter(java.io)
-var files = JavaImporter(java.nio.file)
-var dateFormat = new java.text.SimpleDateFormat(&quot;yyyyMMdd_HHmmss&quot;)
-var timestamp = dateFormat.format(new java.util.Date())
-
-var openBuilding = WDS.browser.findElement(pkg.By.xpath(&quot;//div[@class=&apos;pna horizontal middle&apos;]&quot;))
-openBuilding.click()
-
-java.lang.Thread.sleep(${pause1})
-
-var building = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@class=&apos;items-list is-open can-scroll vertical&apos;]&quot;))
-building.click()
-
-java.lang.Thread.sleep(${pause1})
-
-var openFloor = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;pna horizontal middle&apos;])[2]&quot;))
-openFloor.click()
-
-java.lang.Thread.sleep(${pause1})
-
-var fifthFloor = WDS.browser.findElement(pkg.By.xpath(&quot;//ul[@class=&apos;items-list is-open can-scroll vertical&apos;]&quot;))
-fifthFloor.click()
-
-java.lang.Thread.sleep(${pause1})
-
-var openDevices = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;pna horizontal middle&apos;])[3]&quot;))
-openDevices.click()
-
-java.lang.Thread.sleep(${pause1})
-
-var selectDevice = WDS.browser.findElement(pkg.By.xpath(&quot;(//li[@class=&apos;pna vertical middle no-flex&apos;])[6]&quot;))
-selectDevice.click()
-
-java.lang.Thread.sleep(${pause1})
-
-var selectDeviceFromMenu = WDS.browser.findElement(pkg.By.xpath(&quot;(//li[@class=&apos;list-item&apos;])[3]&quot;))
-selectDeviceFromMenu.click()
-
-java.lang.Thread.sleep(${pause1})
-
-
-try {
-  // Capture screenshot
-  var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
-
-  // Define the destination directory
-  var screenshotDirectory = &quot;${Screenshots}&quot;
-
-  // Create the directory if it doesn&apos;t exist
-  new io.File(screenshotDirectory).mkdirs()
-
-  // Construct the screenshot filename with timestamp and user
-  var screenshotFilename = &quot;Snap&quot; + timestamp + &quot;_&quot; + &apos;${Users}&apos; + &quot;Users&quot; + &quot;-&quot; + &apos;${User}&apos; + &quot;.png&quot;
-
-  // Define the destination path
-  var screenshotPath = screenshotDirectory + &quot;//&quot; + screenshotFilename
-
-  // Save the screenshot to the specified path
-  var destinationPath = new io.File(screenshotPath).toPath()
-  files.Files.copy(screenshot.toPath(), destinationPath)
-
-  // Log a message indicating successful screenshot saving
-  print(&quot;Screenshot saved successfully: &quot; + screenshotPath)
-} catch (e) {
-  // Log the error message if any exception occurs
-  print(&quot;Failed to save the screenshot: &quot; + e)
-}
-
-WDS.sampleResult.sampleStart()
-
-try {
-	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//img[@class=&apos;nav-tree-logo&apos;]&quot;)))
-} catch (err) {
-//    WDS.log.error(err.message)
-    print(&quot;The Error Is: &quot; + err.message)
-    var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
-    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//Project_Page_${__time(ddMM_HHmm,)}.png&apos;))
-    exception = err
-    throw exception
-}
-
-WDS.sampleResult.sampleEnd()
-</stringProp>
-          <stringProp name="WebDriverSampler.parameters"></stringProp>
-          <stringProp name="WebDriverSampler.language">javascript</stringProp>
-        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
-        <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Send Command" enabled="false">
-          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
-var ui = JavaImporter(org.openqa.selenium.support.ui)
-var wait = new ui.WebDriverWait(WDS.browser, ${elementwait})
-var conditions = org.openqa.selenium.support.ui.ExpectedConditions
-var exception = null
-var fileUtils = JavaImporter(org.apache.qpid.util)
-var io = JavaImporter(java.io)
-
-try {
-  var appLauncher = WDS.browser.findElement(pkg.By.xpath(&quot;//button[@class=&apos;link-button pna launcher-open-btn&apos;]&quot;))
-  appLauncher.click();
-
-  var DBBuilder = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;vertical middle center app-item pna&apos;])[21]&quot;))
-  DBBuilder.click();
-
-  java.lang.Thread.sleep(${pause5})
-
-  var equpTree = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[1]&quot;))
-  equpTree.click();
-
-  java.lang.Thread.sleep(${pause5})
-
-  var RDOffice = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[2]&quot;))
-  RDOffice.click();
-
-  java.lang.Thread.sleep(${pause5})
-
-  var Floor5 = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[3]&quot;))
-  Floor5.click();
-
-  java.lang.Thread.sleep(${pause5})
-
-  var IrrPumpPoint = WDS.browser.findElement(pkg.By.xpath(&quot;(//div[@class=&apos;psh horizontal middle center disclosure-btn&apos;])[7]&quot;))
-  IrrPumpPoint.click();
-
-  java.lang.Thread.sleep(${pause5})
-
-  var selectPoint = WDS.browser.findElement(pkg.By.xpath(&quot;(//*[@class=&apos;icon-location refresh-icon psh link-button msl&apos;])[6]&quot;))
-  selectPoint.click();
-
-  java.lang.Thread.sleep(${pause5})
-
-  // Switch to the iframe
-  var iframe = WDS.browser.findElement(pkg.By.className(&quot;mini-builder&quot;));
-  WDS.browser.switchTo().frame(iframe);
-
-  java.lang.Thread.sleep(${pause5})
-
-  var sendCommandButton = WDS.browser.findElement(pkg.By.xpath(&quot;(//td[@class=&apos;ant-table-column-has-actions ant-table-column-has-filters ant-table-row-cell-break-word&apos;]//button)[2]&quot;))
-  sendCommandButton.click();
-
-  java.lang.Thread.sleep(${pause5})
-
-//  // Wait for the popup to appear
-//  var popup = wait.until(conditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//*[@id=&apos;point-actions&apos;]/div&quot;)))
-//
-//  var clickEmerActive = WDS.browser.findElement(pkg.By.xpath(&quot;//button[text()=&apos;Emergency Active&apos;]&quot;))
-//  clickEmerActive.click();
-//
-//  java.lang.Thread.sleep(${pause5})
-
-  // Delay to allow the popup to fully load
-  java.lang.Thread.sleep(${pause5});
-} catch (e) {
-  // Log the error message if any exception occurs
-  print(&quot;The Error Is: &quot; + e)
-}
-
-WDS.sampleResult.sampleStart()
-
-try {
-	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//span[text()=&apos;Available Trees:&apos;]&quot;)))
-} catch (err) {
-//    WDS.log.error(err.message)
-    print(&quot;The Error Is: &quot; + err.message)
-    var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
-    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//SendCommand_Page_${__time(ddMM_HHmm,)}.png&apos;))
-    exception = err
-    throw exception
-}
-
-WDS.sampleResult.sampleEnd()
-</stringProp>
-          <stringProp name="WebDriverSampler.parameters"></stringProp>
-          <stringProp name="WebDriverSampler.language">javascript</stringProp>
-        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
-        <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="Logout" enabled="false">
-          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium);
-var ui = JavaImporter(org.openqa.selenium.support.ui);
-var wait = new ui.WebDriverWait(WDS.browser, ${elementwait});
-var conditions = org.openqa.selenium.support.ui.ExpectedConditions;
-var exception = null;
-var fileUtils = JavaImporter(org.apache.qpid.util);
-var io = JavaImporter(java.io);
-
-var appLauncher = WDS.browser.findElement(pkg.By.xpath(&quot;//button[@class=&apos;link-button pna launcher-open-btn&apos;]&quot;))
-appLauncher.click();
-
-
-var Logout = WDS.browser.findElement(pkg.By.xpath(&quot;//span[text()=&apos;Logout&apos;]&quot;))
-Logout.click();
-
-WDS.sampleResult.sampleStart()
-
-try {
-	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//input[@id=&apos;loginButton&apos;]&quot;)))
-} catch (err) {
-    WDS.log.error(err.message)
-    var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
-    screenshot.renameTo(new java.io.File(&apos;${Screenshot}//Logout_Page_${__time(ddMM_HHmm,)}.png&apos;))
-    exception = err
-    throw exception
-}
-
-WDS.sampleResult.sampleEnd()</stringProp>
-          <stringProp name="WebDriverSampler.parameters"></stringProp>
-          <stringProp name="WebDriverSampler.language">javascript</stringProp>
-        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
-        <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
@@ -629,7 +375,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <stringProp name="TestPlan.comments">Project Page</stringProp>
+        <stringProp name="TestPlan.comments">Login page to Project Page  -  SHOULD be within 370ms (all screen transitions – change of one screen to another screen)</stringProp>
       </ThreadGroup>
       <hashTree>
         <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="File Paths and URL" enabled="true">
@@ -990,7 +736,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Scenario-3" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Scenario-3" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1002,7 +748,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <stringProp name="TestPlan.comments">Graphics Page</stringProp>
+        <stringProp name="TestPlan.comments">Graphics Page  - SHOULD be within 400ms (Landing page after login , Project page ,Graphics screen etc.</stringProp>
       </ThreadGroup>
       <hashTree>
         <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="File Paths and URL" enabled="true">
@@ -1193,7 +939,7 @@ if (Advance) {
     proceedLink.click(); // Clicks on the Proceed link if it is present
   }
 }
-
+java.lang.Thread.sleep(${pause2})
 try {
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//span[contains(text(),&apos;Host&apos;)]&quot;)))
 } catch (err) {
@@ -1221,7 +967,7 @@ var io = JavaImporter(java.io)
 var OpenProject = WDS.browser.findElement(pkg.By.xpath(&quot;(//button[@class=&apos;action-btn minimal msl&apos;])[2]&quot;))
 OpenProject.click();
 
-java.lang.Thread.sleep(${pause5})
+java.lang.Thread.sleep(${pause2})
 
 // Switch to the new tab
 var mainWindowHandle = WDS.browser.getWindowHandle();
@@ -1293,8 +1039,7 @@ java.lang.Thread.sleep(${pause1})
 var selectDeviceFromMenu = WDS.browser.findElement(pkg.By.xpath(&quot;(//li[@class=&apos;list-item&apos;])[3]&quot;))
 selectDeviceFromMenu.click()
 
-java.lang.Thread.sleep(${pause1})
-
+//WDS.sampleResult.sampleStart()
 
 try {
   // Capture screenshot
@@ -1469,7 +1214,7 @@ WDS.sampleResult.sampleEnd()
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <stringProp name="TestPlan.comments">Logout</stringProp>
+        <stringProp name="TestPlan.comments">Logout   -  Within 200ms ( close or exit of application)</stringProp>
       </ThreadGroup>
       <hashTree>
         <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="File Paths and URL" enabled="true">
@@ -1629,7 +1374,8 @@ password.sendKeys([&apos;${Password}&apos;]);
 var submit = WDS.browser.findElement(pkg.By.id(&quot;loginButton&quot;));
 submit.click();
 
-java.lang.Thread.sleep(${pause1})
+//java.lang.Thread.sleep(5000);
+java.lang.Thread.sleep(${pause2})
 
 var Advance = null;
 var proceedLink = null;
@@ -1659,7 +1405,7 @@ if (Advance) {
     proceedLink.click(); // Clicks on the Proceed link if it is present
   }
 }
-
+java.lang.Thread.sleep(${pause2})
 try {
 	wait.until(ui.ExpectedConditions.visibilityOfElementLocated(pkg.By.xpath(&quot;//span[contains(text(),&apos;Host&apos;)]&quot;)))
 } catch (err) {
@@ -1835,7 +1581,7 @@ WDS.sampleResult.sampleEnd()</stringProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <stringProp name="TestPlan.comments">Send Emergeny Active Command</stringProp>
+        <stringProp name="TestPlan.comments">Send Emergeny Active Command  -  desirable operation like ON/OFF/Schedule – the data in UI MUST update within 15-20 secs</stringProp>
       </ThreadGroup>
       <hashTree>
         <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="File Paths and URL" enabled="true">
@@ -2442,7 +2188,7 @@ WDS.sampleResult.sampleEnd()
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Scenario-6" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Scenario-6" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -2454,7 +2200,7 @@ WDS.sampleResult.sampleEnd()
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <stringProp name="TestPlan.comments">Control  individual device within 1 min of operation</stringProp>
+        <stringProp name="TestPlan.comments">Control  individual device within 1 min of operation  -  MUST be possible to control individual devices within 1 min after operation.</stringProp>
       </ThreadGroup>
       <hashTree>
         <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="File Paths and URL" enabled="true">
@@ -2831,7 +2577,7 @@ WDS.sampleResult.sampleEnd()
           <stringProp name="WebDriverSampler.language">javascript</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="STP Pump Graph" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="STP Pump Command" enabled="true">
           <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)
 var ui = JavaImporter(org.openqa.selenium.support.ui)
 var wait = new ui.WebDriverWait(WDS.browser, ${elementwait})

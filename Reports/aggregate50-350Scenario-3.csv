@@ -1,0 +1,261 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1687518913205,141,BMS Launch,200,OK,Scenario-3 1-1,text,true,,1778,0,4,4,http://10.254.152.98:8080/user/login,0,0,0
+1687518915178,138,BMS Launch,200,OK,Scenario-3 1-2,text,true,,1778,0,5,5,http://10.254.152.98:8080/user/login,0,0,0
+1687518917286,124,BMS Launch,200,OK,Scenario-3 1-3,text,true,,1778,0,6,6,http://10.254.152.98:8080/user/login,0,0,0
+1687518919225,127,BMS Launch,200,OK,Scenario-3 1-4,text,true,,1778,0,7,7,http://10.254.152.98:8080/user/login,0,0,0
+1687518921206,118,BMS Launch,200,OK,Scenario-3 1-5,text,true,,1778,0,8,8,http://10.254.152.98:8080/user/login,0,0,0
+1687518923199,229,BMS Launch,200,OK,Scenario-3 1-6,text,true,,1778,0,9,9,http://10.254.152.98:8080/user/login,0,0,0
+1687518921598,3555,Login,200,OK,Scenario-3 1-1,text,true,,687726,0,10,10,https://10.254.152.98/home,0,0,0
+1687518925188,394,BMS Launch,200,OK,Scenario-3 1-7,text,true,,1778,0,10,10,http://10.254.152.98:8080/user/login,0,0,0
+1687518927340,714,BMS Launch,200,OK,Scenario-3 1-8,text,true,,1778,0,11,11,http://10.254.152.98:8080/user/login,0,0,0
+1687518923531,5520,Login,200,OK,Scenario-3 1-2,text,true,,683989,0,12,12,https://10.254.152.98/home,0,0,0
+1687518929540,1125,BMS Launch,200,OK,Scenario-3 1-9,text,true,,1778,0,13,13,http://10.254.152.98:8080/user/login,0,0,0
+1687518925749,5240,Login,200,OK,Scenario-3 1-3,text,true,,687726,0,13,13,https://10.254.152.98/home,0,0,0
+1687518931527,549,BMS Launch,200,OK,Scenario-3 1-10,text,true,,1778,0,13,13,http://10.254.152.98:8080/user/login,0,0,0
+1687518927923,3902,Login,200,OK,Scenario-3 1-4,text,true,,687725,0,14,14,https://10.254.152.98/home,0,0,0
+1687518933739,616,BMS Launch,200,OK,Scenario-3 1-11,text,true,,1778,0,14,14,http://10.254.152.98:8080/user/login,0,0,0
+1687518934540,1051,Project Page,200,OK,Scenario-3 1-1,text,true,,707349,0,15,15,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518935943,547,BMS Launch,200,OK,Scenario-3 1-12,text,true,,1778,0,15,15,http://10.254.152.98:8080/user/login,0,0,0
+1687518929891,10405,Login,200,OK,Scenario-3 1-5,text,true,,687726,0,18,18,https://10.254.152.98/home,0,0,0
+1687518941706,965,Project Page,200,OK,Scenario-3 1-3,text,true,,707351,0,19,19,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518938892,3965,BMS Launch,200,OK,Scenario-3 1-13,text,true,,1778,0,19,19,http://10.254.152.98:8080/user/login,0,0,0
+1687518940595,2710,Project Page,200,OK,Scenario-3 1-2,text,true,,706496,0,20,20,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518938209,7354,Login,200,OK,Scenario-3 1-7,text,true,,687728,0,20,20,https://10.254.152.98/home,0,0,0
+1687518940593,3236,BMS Launch,200,OK,Scenario-3 1-14,text,true,,1778,0,21,21,http://10.254.152.98:8080/user/login,0,0,0
+1687518941899,6478,Login,200,OK,Scenario-3 1-10,text,true,,687726,0,21,21,https://10.254.152.98/home,0,0,0
+1687518944639,2790,BMS Launch,200,OK,Scenario-3 1-15,text,true,,1778,0,21,21,http://10.254.152.98:8080/user/login,0,0,0
+1687518932501,15167,Login,200,OK,Scenario-3 1-6,text,true,,687725,0,22,22,https://10.254.152.98/home,0,0,0
+1687518947656,973,Project Page,200,OK,Scenario-3 1-4,text,true,,707349,0,23,23,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518949417,2061,BMS Launch,200,OK,Scenario-3 1-17,text,true,,1778,0,23,23,http://10.254.152.98:8080/user/login,0,0,0
+1687518952059,3018,BMS Launch,200,OK,Scenario-3 1-18,text,true,,1778,0,25,25,http://10.254.152.98:8080/user/login,0,0,0
+1687518947134,8306,Login,200,OK,Scenario-3 1-12,text,true,,687725,0,25,25,https://10.254.152.98/home,0,0,0
+1687518957826,2595,BMS Launch,200,OK,Scenario-3 1-20,text,true,,1778,0,27,27,http://10.254.152.98:8080/user/login,0,0,0
+1687518952516,3908,BMS Launch,200,OK,Scenario-3 1-16,text,true,,1778,0,28,28,http://10.254.152.98:8080/user/login,0,0,0
+1687518959721,3139,BMS Launch,200,OK,Scenario-3 1-22,text,true,,1778,0,28,28,http://10.254.152.98:8080/user/login,0,0,0
+1687518963464,1696,Project Page,200,OK,Scenario-3 1-10,text,true,,707350,0,30,30,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518959509,2524,Project Page,200,OK,Scenario-3 1-7,text,true,,707349,0,30,30,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518964112,2432,BMS Launch,200,OK,Scenario-3 1-21,text,true,,1778,0,30,30,http://10.254.152.98:8080/user/login,0,0,0
+1687518951783,12622,Login,200,OK,Scenario-3 1-8,text,true,,687727,0,30,30,https://10.254.152.98/home,0,0,0
+1687518964374,2561,Project Page,200,OK,Scenario-3 1-5,text,true,,707350,0,31,31,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518953422,8532,BMS Launch,200,OK,Scenario-3 1-19,text,true,,1778,0,31,31,http://10.254.152.98:8080/user/login,0,0,0
+1687518965081,3016,BMS Launch,200,OK,Scenario-3 1-23,text,true,,1778,0,31,31,http://10.254.152.98:8080/user/login,0,0,0
+1687518961759,3289,Project Page,200,OK,Scenario-3 1-6,text,true,,707352,0,32,32,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518964243,2231,Graphics Screen,200,OK,Scenario-3 1-1,text,true,,717965,0,32,32,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518969585,161,Graphics Screen,200,OK,Scenario-3 1-2,text,true,,717113,0,33,33,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518968209,2852,Project Page,200,OK,Scenario-3 1-12,text,true,,707351,0,33,33,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518974615,928,BMS Launch,200,OK,Scenario-3 1-24,text,true,,1778,0,35,35,http://10.254.152.98:8080/user/login,0,0,0
+1687518964136,12301,Login,200,OK,Scenario-3 1-9,text,true,,687726,0,36,36,https://10.254.152.98/home,0,0,0
+1687518976107,273,Project Page,200,OK,Scenario-3 1-8,text,true,,707349,0,36,36,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518966873,13990,Login,200,OK,Scenario-3 1-13,text,true,,687727,0,38,38,https://10.254.152.98/home,0,0,0
+1687518982050,167,Graphics Screen,200,OK,Scenario-3 1-10,text,true,,717967,0,38,38,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518966767,15360,Login,200,OK,Scenario-3 1-11,text,true,,687725,0,39,39,https://10.254.152.98/home,0,0,0
+1687518981527,1860,Graphics Screen,200,OK,Scenario-3 1-3,text,true,,717967,0,39,39,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518983261,250,Graphics Screen,200,OK,Scenario-3 1-4,text,true,,717966,0,39,39,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518986438,104,Graphics Screen,200,OK,Scenario-3 1-12,text,true,,724563,0,41,41,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518985882,823,Graphics Screen,200,OK,Scenario-3 1-7,text,true,,717966,0,41,41,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518986348,1347,Graphics Screen,200,OK,Scenario-3 1-6,text,true,,717968,0,41,41,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518987663,852,Project Page,200,OK,Scenario-3 1-9,text,true,,707350,0,42,42,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518989745,122,Graphics Screen,200,OK,Scenario-3 1-5,text,true,,724562,0,42,42,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518994379,203,Project Page,200,OK,Scenario-3 1-11,text,true,,707352,0,44,44,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518995732,155,Project Page,200,OK,Scenario-3 1-13,text,true,,707350,0,45,45,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518974333,22081,BMS Launch,200,OK,Scenario-3 1-27,text,true,,1778,0,45,45,http://10.254.152.98:8080/user/login,0,0,0
+1687519003465,2136,Graphics Screen,200,OK,Scenario-3 1-8,text,true,,717965,0,48,48,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518982411,29874,Login,200,OK,Scenario-3 1-21,text,true,,687726,0,46,46,https://10.254.152.98/home,0,0,0
+1687518981841,31289,Login,200,OK,Scenario-3 1-15,text,true,,687726,0,45,45,https://10.254.152.98/home,0,0,0
+1687519011934,1037,Graphics Screen,200,OK,Scenario-3 1-9,text,true,,717966,0,45,45,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687518984026,29577,Login,200,OK,Scenario-3 1-19,text,true,,687726,0,45,45,https://10.254.152.98/home,0,0,0
+1687518989266,23865,Login,200,OK,Scenario-3 1-24,text,true,,687727,0,45,45,https://10.254.152.98/home,0,0,0
+1687518976429,37313,Login,200,OK,Scenario-3 1-14,text,true,,687727,0,45,45,https://10.254.152.98/home,0,0,0
+1687519004781,9382,BMS Launch,200,OK,Scenario-3 1-28,text,true,,1778,0,45,45,http://10.254.152.98:8080/user/login,0,0,0
+1687518978777,35248,Login,200,OK,Scenario-3 1-23,text,true,,687729,0,45,45,https://10.254.152.98/home,0,0,0
+1687519008940,5878,BMS Launch,200,OK,Scenario-3 1-25,text,true,,1778,0,45,45,http://10.254.152.98:8080/user/login,0,0,0
+1687518974147,40951,Login,200,OK,Scenario-3 1-22,text,true,,687726,0,45,45,https://10.254.152.98/home,0,0,0
+1687518980523,37807,Login,200,OK,Scenario-3 1-20,text,true,,687728,0,45,45,https://10.254.152.98/home,0,0,0
+1687518979308,37308,Login,200,OK,Scenario-3 1-16,text,true,,687726,0,45,45,https://10.254.152.98/home,0,0,0
+1687519025097,7671,Project Page,200,OK,Scenario-3 1-21,text,true,,707351,0,45,45,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519029736,2115,Project Page,200,OK,Scenario-3 1-20,text,true,,707350,0,45,45,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519029237,3782,Project Page,200,OK,Scenario-3 1-22,text,true,,707351,0,45,45,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519022949,10484,Project Page,200,OK,Scenario-3 1-23,text,true,,707351,0,43,43,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519030102,3277,Project Page,200,OK,Scenario-3 1-19,text,true,,707310,0,43,43,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519030051,3248,Project Page,200,OK,Scenario-3 1-15,text,true,,707350,0,43,43,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519032869,712,Project Page,200,OK,Scenario-3 1-14,text,true,,707351,0,43,43,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519030053,7480,Project Page,200,OK,Scenario-3 1-24,text,true,,707352,0,43,43,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519033436,3577,Project Page,200,OK,Scenario-3 1-16,text,true,,707349,0,43,43,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687518963181,76985,Login,500,"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Host')] (tried for 70 second(s) with 500 milliseconds interval) in <eval> at line number 57 at column number 4",Scenario-3 1-17,text,false,,1246,0,43,43,null,0,0,0
+1687519045368,0,Project Page,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""(//button[@class='action-btn minimal msl'])[2]""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c3627fc44cb9a22c01c76d950e50c2b
+*** Element info: {Using=xpath, value=(//button[@class='action-btn minimal msl'])[2]}",Scenario-3 1-17,text,false,,3797,0,42,42,null,0,0,0
+1687519029753,17486,BMS Launch,200,OK,Scenario-3 1-44,text,true,,1778,0,40,40,http://10.254.152.98:8080/user/login,0,0,0
+1687519043810,4920,BMS Launch,200,OK,Scenario-3 1-29,text,true,,1778,0,40,40,http://10.254.152.98:8080/user/login,0,0,0
+1687519043880,4585,Graphics Screen,200,OK,Scenario-3 1-13,text,true,,717966,0,40,40,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519023504,25553,BMS Launch,200,OK,Scenario-3 1-41,text,true,,1778,0,40,40,http://10.254.152.98:8080/user/login,0,0,0
+1687519050489,0,Graphics Screen,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//div[@class='pna horizontal middle']""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c3627fc44cb9a22c01c76d950e50c2b
+*** Element info: {Using=xpath, value=//div[@class='pna horizontal middle']}",Scenario-3 1-17,text,false,,3780,0,39,39,null,0,0,0
+1687519041505,9052,BMS Launch,200,OK,Scenario-3 1-31,text,true,,1778,0,39,39,http://10.254.152.98:8080/user/login,0,0,0
+1687518972889,79092,Login,500,"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Host')] (tried for 70 second(s) with 500 milliseconds interval) in <eval> at line number 57 at column number 4",Scenario-3 1-18,text,false,,1246,0,38,38,null,0,0,0
+1687519034705,22171,BMS Launch,200,OK,Scenario-3 1-39,text,true,,1778,0,38,38,http://10.254.152.98:8080/user/login,0,0,0
+1687519052051,4554,Graphics Screen,200,OK,Scenario-3 1-22,text,true,,717967,0,38,38,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519060348,0,Project Page,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""(//button[@class='action-btn minimal msl'])[2]""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51184}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 361363b17bf00e11f6595cd4cf2f742f
+*** Element info: {Using=xpath, value=(//button[@class='action-btn minimal msl'])[2]}",Scenario-3 1-18,text,false,,3797,0,38,38,null,0,0,0
+1687519053956,6198,Graphics Screen,200,OK,Scenario-3 1-11,text,true,,717968,0,38,38,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519058110,7404,Graphics Screen,200,OK,Scenario-3 1-20,text,true,,717966,0,38,38,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519055426,651,Graphics Screen,200,OK,Scenario-3 1-23,text,true,,717968,0,38,38,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519069389,0,Graphics Screen,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//div[@class='pna horizontal middle']""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51184}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 361363b17bf00e11f6595cd4cf2f742f
+*** Element info: {Using=xpath, value=//div[@class='pna horizontal middle']}",Scenario-3 1-18,text,false,,3780,0,38,38,null,0,0,0
+1687519043853,25900,BMS Launch,200,OK,Scenario-3 1-30,text,true,,1778,0,38,38,http://10.254.152.98:8080/user/login,0,0,0
+1687519064539,3612,Graphics Screen,200,OK,Scenario-3 1-21,text,true,,717967,0,38,38,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519069307,767,Graphics Screen,200,OK,Scenario-3 1-24,text,true,,717969,0,36,36,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519005279,76813,Login,500,"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Host')] (tried for 70 second(s) with 500 milliseconds interval) in <eval> at line number 57 at column number 4",Scenario-3 1-27,text,false,,1246,0,35,35,null,0,0,0
+1687519077610,5334,Graphics Screen,200,OK,Scenario-3 1-19,text,true,,717966,0,35,35,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519082275,1533,Graphics Screen,200,OK,Scenario-3 1-15,text,true,,717966,0,35,35,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519087807,0,Project Page,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""(//button[@class='action-btn minimal msl'])[2]""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51940}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bdbbe14ba988dc6df55443f96afb677b
+*** Element info: {Using=xpath, value=(//button[@class='action-btn minimal msl'])[2]}",Scenario-3 1-27,text,false,,3797,0,35,35,null,0,0,0
+1687519087707,339,Graphics Screen,200,OK,Scenario-3 1-14,text,true,,717968,0,35,35,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519089651,2425,Graphics Screen,200,OK,Scenario-3 1-16,text,true,,717965,0,35,35,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519093010,0,Graphics Screen,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//div[@class='pna horizontal middle']""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51940}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bdbbe14ba988dc6df55443f96afb677b
+*** Element info: {Using=xpath, value=//div[@class='pna horizontal middle']}",Scenario-3 1-27,text,false,,3780,0,35,35,null,0,0,0
+1687519050102,47905,BMS Launch,200,OK,Scenario-3 1-49,text,true,,1778,0,35,35,http://10.254.152.98:8080/user/login,0,0,0
+1687519049578,48730,BMS Launch,200,OK,Scenario-3 1-46,text,true,,1778,0,35,35,http://10.254.152.98:8080/user/login,0,0,0
+1687519027425,74281,Login,500,"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Host')] (tried for 70 second(s) with 500 milliseconds interval) in <eval> at line number 57 at column number 4",Scenario-3 1-25,text,false,,1246,0,35,35,null,0,0,0
+1687519046306,54386,BMS Launch,200,OK,Scenario-3 1-38,text,true,,1778,0,35,35,http://10.254.152.98:8080/user/login,0,0,0
+1687519107376,0,Project Page,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""(//button[@class='action-btn minimal msl'])[2]""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e9fd430ae21804dcef48f24abfc0388
+*** Element info: {Using=xpath, value=(//button[@class='action-btn minimal msl'])[2]}",Scenario-3 1-25,text,false,,3797,0,35,35,null,0,0,0
+1687519072404,39800,Login,200,OK,Scenario-3 1-44,text,true,,687727,0,35,35,https://10.254.152.98/home,0,0,0
+1687519112692,0,Graphics Screen,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//div[@class='pna horizontal middle']""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e9fd430ae21804dcef48f24abfc0388
+*** Element info: {Using=xpath, value=//div[@class='pna horizontal middle']}",Scenario-3 1-25,text,false,,3780,0,35,35,null,0,0,0
+1687519085587,26722,Login,200,OK,Scenario-3 1-30,text,true,,687728,0,35,35,https://10.254.152.98/home,0,0,0
+1687519109742,8173,BMS Launch,200,OK,Scenario-3 1-50,text,true,,1778,0,34,34,http://10.254.152.98:8080/user/login,0,0,0
+1687519030915,87481,Login,500,"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Host')] (tried for 70 second(s) with 500 milliseconds interval) in <eval> at line number 57 at column number 4",Scenario-3 1-28,text,false,,1246,0,34,34,null,0,0,0
+1687519125878,0,Project Page,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""(//button[@class='action-btn minimal msl'])[2]""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b692dcdb3bb717fc90c744d0faf82efb
+*** Element info: {Using=xpath, value=(//button[@class='action-btn minimal msl'])[2]}",Scenario-3 1-28,text,false,,3797,0,32,32,null,0,0,0
+1687519077271,50401,Login,200,OK,Scenario-3 1-39,text,true,,687728,0,32,32,https://10.254.152.98/home,0,0,0
+1687519083785,44193,Login,200,OK,Scenario-3 1-29,text,true,,687728,0,30,30,https://10.254.152.98/home,0,0,0
+1687519126848,2297,Project Page,200,OK,Scenario-3 1-44,text,true,,707348,0,29,29,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519131393,0,Graphics Screen,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//div[@class='pna horizontal middle']""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b692dcdb3bb717fc90c744d0faf82efb
+*** Element info: {Using=xpath, value=//div[@class='pna horizontal middle']}",Scenario-3 1-28,text,false,,3708,0,29,29,null,0,0,0
+1687519071112,59133,Login,200,OK,Scenario-3 1-41,text,true,,687726,0,29,29,https://10.254.152.98/home,0,0,0
+1687519126296,5501,Project Page,200,OK,Scenario-3 1-30,text,true,,707350,0,28,28,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519139147,1018,Project Page,200,OK,Scenario-3 1-39,text,true,,707350,0,27,27,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519140782,878,Project Page,200,OK,Scenario-3 1-41,text,true,,707350,0,27,27,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519111434,36068,Login,200,OK,Scenario-3 1-49,text,true,,687727,0,25,25,https://10.254.152.98/home,0,0,0
+1687519141162,5765,Project Page,200,OK,Scenario-3 1-29,text,true,,707350,0,25,25,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519118160,29857,Login,200,OK,Scenario-3 1-38,text,true,,687726,0,25,25,https://10.254.152.98/home,0,0,0
+1687519149808,276,Graphics Screen,200,OK,Scenario-3 1-44,text,true,,717965,0,25,25,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519152362,529,Graphics Screen,200,OK,Scenario-3 1-30,text,true,,717967,0,22,22,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519158149,1015,Project Page,200,OK,Scenario-3 1-49,text,true,,707350,0,22,22,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519159027,291,Project Page,200,OK,Scenario-3 1-38,text,true,,707348,0,22,22,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519161280,555,Graphics Screen,200,OK,Scenario-3 1-41,text,true,,717967,0,22,22,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519161721,211,Graphics Screen,200,OK,Scenario-3 1-39,text,true,,717967,0,22,22,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519064322,102025,Login,200,OK,Scenario-3 1-31,text,true,,687686,0,22,22,https://10.254.152.98/home,0,0,0
+1687519168052,359,Graphics Screen,200,OK,Scenario-3 1-29,text,true,,717967,0,22,22,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519175186,768,Project Page,200,OK,Scenario-3 1-31,text,true,,707350,0,21,21,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&url=%2Ffin5%2Fdemo%3FprojectRef%3D%401eedac62-ea569755%26title%3DshowSettings,0,0,0
+1687519175099,120,Graphics Screen,200,OK,Scenario-3 1-38,text,true,,717965,0,21,21,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519174903,316,Graphics Screen,200,OK,Scenario-3 1-49,text,true,,717967,0,21,21,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519109342,73900,Login,500,"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Host')] (tried for 70 second(s) with 500 milliseconds interval) in <eval> at line number 57 at column number 4",Scenario-3 1-46,text,false,,1246,0,13,13,null,0,0,0
+1687519188293,0,Project Page,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""(//button[@class='action-btn minimal msl'])[2]""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bd4fb615670e3a855b3064e8de465ff
+*** Element info: {Using=xpath, value=(//button[@class='action-btn minimal msl'])[2]}",Scenario-3 1-46,text,false,,3725,0,13,13,null,0,0,0
+1687519188735,62,Graphics Screen,200,OK,Scenario-3 1-31,text,true,,724562,0,13,13,https://10.254.152.98/finMobile/panasonic#frame?app=graphics&targetRef=@p:panasonic:r:2bbe8f57-5257d533&url=%2Ffin5%2Fpanasonic%3FprojectRef%3D%40p%3Apanasonic%3Ar%3A2bbe8fed-c3061e46%26title%3DshowSettings%23targetRef%3D%40p%3Apanasonic%3Ar%3A2bbe8f57-5257d533,0,0,0
+1687519193331,0,Graphics Screen,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//div[@class='pna horizontal middle']""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bd4fb615670e3a855b3064e8de465ff
+*** Element info: {Using=xpath, value=//div[@class='pna horizontal middle']}",Scenario-3 1-46,text,false,,3708,0,12,12,null,0,0,0
+1687519128773,73864,Login,500,"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Host')] (tried for 70 second(s) with 500 milliseconds interval) in <eval> at line number 57 at column number 4",Scenario-3 1-50,text,false,,1246,0,11,11,null,0,0,0
+1687519207689,0,Project Page,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""(//button[@class='action-btn minimal msl'])[2]""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff64ff5e8a819451b5d644bd394db26a
+*** Element info: {Using=xpath, value=(//button[@class='action-btn minimal msl'])[2]}",Scenario-3 1-50,text,false,,3725,0,11,11,null,0,0,0
+1687519212749,0,Graphics Screen,500,"no such element: Unable to locate element: {""method"":""xpath"",""selector"":""//div[@class='pna horizontal middle']""}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-J9MPAVI', ip: '10.254.152.98', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\RACIT~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff64ff5e8a819451b5d644bd394db26a
+*** Element info: {Using=xpath, value=//div[@class='pna horizontal middle']}",Scenario-3 1-50,text,false,,3708,0,10,10,null,0,0,0

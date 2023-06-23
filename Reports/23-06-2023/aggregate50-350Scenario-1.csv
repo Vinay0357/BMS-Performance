@@ -1,0 +1,4 @@
+Label,# Samples,Average,Median,90% Line,95% Line,99% Line,Min,Max,Error %,Throughput,Received KB/sec,Sent KB/sec
+BMS Launch,50,125,124,136,138,158,119,158,0.000%,.14569,0.25,0.00
+Login,50,1170,1180,1222,1231,1434,803,1434,0.000%,.14539,97.63,0.00
+TOTAL,100,648,158,1212,1222,1255,119,1434,0.000%,.28388,95.56,0.00
